@@ -1,17 +1,22 @@
 .btn {
+  &,
   &:link,
   &:visited {
     border-radius: 10rem;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     padding: 1.5rem 4rem;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s;
+
+    border: none;
+    cursor: pointer;
   }
 
-  &:active {
+  &:active, &:focus {
+    outline: none;
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     transform: translateY(-0.1rem);
   }
@@ -52,7 +57,16 @@
       background-color: $color-white;
     }
   }
+  &--green{
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
 }
+
 .btn-text {
   &:link,
   &:visited {
