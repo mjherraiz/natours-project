@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "fix-code": "prettier-eslint --write 'js/**/*.{js,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'sass/**/*.{css,scss}' ",
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
@@ -17,7 +19,10 @@
   },
   "homepage": "https://github.com/mjherraiz/natours-project#readme",
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2"
   },
   "dependencies": {}
 }
