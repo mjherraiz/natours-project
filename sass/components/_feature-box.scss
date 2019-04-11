@@ -7,8 +7,13 @@
 	padding: 2.5rem;
 	transition: transform .3s;
 
+	@include respond(tab-port) {
+		padding: 2rem;
+	}
+
 	&__icon {
 		-webkit-background-clip: text;
+		background-clip: text;
 		font-size: 6rem;
 		margin-bottom: .5rem;
 		background-image: linear-gradient(
@@ -18,6 +23,10 @@
 	);
 		display: inline-block;
 		color: transparent;
+
+		@include respond(tab-port) {
+			margin: 0;
+		}
 	}
 
 	&:hover {
@@ -25,5 +34,6 @@
 	}
 
 	&__text {
+		font-size: 1.4rem;
 	}
 }

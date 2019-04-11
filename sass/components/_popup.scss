@@ -87,4 +87,33 @@
 			color: $color-primary;
 		}
 	}
+
+	@include respond(phone) {
+		&__content {
+			width: 85%;
+			display: block;
+			overflow: scroll;
+			height: 90%;
+		}
+
+		&__img:not(:last-child) {
+			display: none;
+		}
+
+		&__left {
+			width: 100%;
+			display: block;
+		}
+
+		&__right {
+			width: 100%;
+			display: block;
+		}
+
+		&__text {
+			font-size: 2rem;
+			column-count: 1;
+			column-gap: 0;
+		}
+	}
 }
