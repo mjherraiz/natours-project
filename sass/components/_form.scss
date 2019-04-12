@@ -41,9 +41,10 @@
 		margin-top: .7rem;
 		display: block;
 		transition: all .3s;
+
 	}
 
-	&__input:placeholder-shown + &__label {
+	&__input:placeholder-shown + span {
 		opacity: 0;
 		visibility: hidden;
 		transform: translateY(-4rem);
